@@ -1,9 +1,78 @@
-.container-fluid {
-    border: 1px solid yellow;
-    background-image: url('../../assets/itl.cat_forest-hd-wallpaper-free_1056477.jpeg');
-    height: 100vh;
-    padding-left: 0px;
-    padding-right: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 
+// The best study partners JN & JJ
+.container-fluid {
+  background-image: url("../../assets/itl.cat_forest-hd-wallpaper-free_1056477.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  width: 100vw;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
+h1 {
+  font-family: "Arizonia", cursive;
+  color: whitesmoke;
+  font-size: 150px;
+  margin: 0;
+  padding-top: 75px;
+  text-align: center;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif, cursive;
+    color: white;
+    font-size: 30px;
+    margin: 0 auto;
+    padding-top: 300px;
+    text-align: center;
+}
+#firstName {
+    align-items: center;
+}
+
+label {
+    display: flex;
+    align-content: center;
+    color: silver;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 100;
+   
+   
+}
+form.group {
+    display: flex;
+    align-content: center;
+    flex-basis: 200px;
+    min-width: 50px;
+    min-height: 200px;
+    padding: 50px 50px 100px 50px;
+}
+
+input {
+    display: flex;
+    align-content: center;
+    margin: 0 auto;
+    width: 200px;
+  }
+
+  input:focus {
+    outline: none;
+    background-color: white;
+  }
+  .btn {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    display: center;
+    border: solid 1px black;
+    color: whitesmoke;
+  }
+  
+  .btn:hover {
+    background-color: #202020;
+    border: solid 3px black;
+    color: white;
+  }

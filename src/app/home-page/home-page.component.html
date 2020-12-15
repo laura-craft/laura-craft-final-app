@@ -1,3 +1,19 @@
-<h1>Christmas Wizard</h1>
-<div class = "container-fluid"></div>
+
+<div class = "container-fluid">
+    <h1>Christmas Wizard</h1>
+
+    <h3>Enter here for a stress free holiday season...</h3>
+    <form [formGroup]="enterForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="firstName"></label>
+                <input type="text" formControlName="firstName" placeholder="First Name" id="firstName" class="form-control" />
+            </div>
+        <div class = "form-group">
+        <button [disabled]="loading" class="btn btn-primary" (click)="onSubmit()" type = "submit">
+            Enter Here
+        </button>
+        </div>
+        </form>
+
+</div>
 

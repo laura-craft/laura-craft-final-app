@@ -28,9 +28,6 @@ h3 {
     padding-top: 300px;
     text-align: center;
 }
-#firstName {
-    align-items: center;
-}
 
 label {
     display: flex;
@@ -70,7 +67,11 @@ input {
     border: solid 1px black;
     color: whitesmoke;
   }
-  
+  // .btn:btn-primary {
+  //   font-style: italic;
+  //   text-align: center;
+  // }
+
   .btn:hover {
     background-color: #202020;
     border: solid 3px black;

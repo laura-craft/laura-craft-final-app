@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+      <header class="main-header d-flex flex-direction-column">
+        <div class="col head-navbar d-flex justify-content-start">
+          <!--header navbar-->
+            <nav class="navbar navbar-expand-lg  navbar-light">
+              <button class="navbar-toggler" type="button" 
+                (click)="toggleNavbar()">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse"
+                [ngClass]="{ 'show': navbarOpen }">
+                  <div class="navbar-nav mr-auto">
+                    <a
+                    class="nav-item" nav-link px-3
+                    routerLink="/welcome-page">Welcome Page</a>
+                    <a
+                    class="nav-item" nav-link px-3
+                    routerLink="/main-page">Home</a>
+                    <a
+                    class="nav-item" nav-link px-3
+                    routerLink="shopping-lists">Shopping List</a>
+                      <a
+                      class="nav-item" nav-link px-3
+                      routerLink="to-do-list">To Do List</a>
+                      <a 
+                      class="nav-item" nav-link px-3
+                      routerLink="calendar">Calendar</a>
+                  </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+      </div>
+    </div>

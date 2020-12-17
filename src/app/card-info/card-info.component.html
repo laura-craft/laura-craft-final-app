@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 my-5" *ngFor="let card of cards" >
+            
+<mdb-card>
+    <mdb-card-img [src]="card.img" alt="Card image cap" class="image">
+    </mdb-card-img>
+    <mdb-card-body>
+        <mdb-card-title class="title">
+            <h4>{{ card.title }}</h4>
+        </mdb-card-title>
+        <mdb-card-text>
+            {{card.description}}
+        </mdb-card-text>
+        <button class="mdbBtn" routerLink="shopping-lists"> {{card.buttonText}}</button>
+    </mdb-card-body>
+</mdb-card>
+</div>
+</div>
+</div>
+           

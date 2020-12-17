@@ -4,11 +4,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-home-page',
-  templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss']
+  selector: 'app-welcome-page',
+  templateUrl: './welcome-page.component.html',
+  styleUrls: ['./welcome-page.component.scss']
 })
-export class HomePageComponent implements OnInit {
+export class WelcomePageComponent implements OnInit {
   enterForm: FormGroup;
   loading=false;
   submitted=false;
@@ -25,7 +25,7 @@ export class HomePageComponent implements OnInit {
   }
   onSubmit() {
    this.submitted = true;
-   this.router.navigate(['/main-nav']);
+   this.router.navigate(['/main-page']);
 
     }
     };

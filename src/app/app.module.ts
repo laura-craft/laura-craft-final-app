@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatNativeDateModule} from '@angular/material/core';
+import { ShoppingEditComponent } from './shopping-lists/shopping-edit/shopping-edit.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MatNativeDateModule} from '@angular/material/core';
     CardInfoComponent,
     ToDoListComponent,
     ShoppingListsComponent,
-    CalendarComponent
+    CalendarComponent,
+    ShoppingEditComponent
   ],
   imports: [
     BrowserModule,

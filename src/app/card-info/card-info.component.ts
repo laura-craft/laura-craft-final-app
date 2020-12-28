@@ -12,7 +12,7 @@ export class CardInfoComponent implements OnInit {
       description: 'Grocery shopping, gift purchases, etc.',
       buttonText: 'Go to Shopping Lists',
       img: 'http:../../assets/checklist-1622517_1920.png',
-      route: 'shopping-list'
+      route: 'shopping-lists'
     },
     {
       title: 'To Do Lists',
@@ -25,7 +25,7 @@ export class CardInfoComponent implements OnInit {
       title: 'Calendar',
       description: 'Keep all your events organized',
       buttonText: 'Go to Calendar',
-      img: 'http:../../assets/checklist-1622517_1920.png',
+      img: 'http:../../assets/calendar.png',
       route: 'calendar'
       },
       {

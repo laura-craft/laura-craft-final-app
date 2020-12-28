@@ -1,17 +1,22 @@
 <div class="container">
     <div>
-        <h2> Shopping List </h2>
+        <h2> Grocery Shopping List </h2>
         <div class="row">
             <div class="col-xs-6" col-md-4>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="enter items here" id="txtSearch" />
-                  <button class="btn btn-primary" type="button" (click)="onClick()">
-                      <span class="bi bi-check-circle-fill"></span>
-                      </button>
+                <app-shopping-edit></app-shopping-edit>
+                <hr>
+                <ul class="list-group">
+                    <a class="list-group-item" 
+                    style="cursor: pointer"
+                    *ngFor = "let item of items"
+                    >
+                 {{ item.name }} ({{ item.amount }})
+                 </a>
+                </ul>
                       
                     
                 </div>
             </div>
         </div>
     </div>
-</div>
+

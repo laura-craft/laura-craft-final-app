@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
@@ -20,7 +20,7 @@ import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { MatNativeDateModule} from '@angular/material/core';
+import { MatNativeDateModule } from '@angular/material/core';
 import { ShoppingEditComponent } from './shopping-lists/shopping-edit/shopping-edit.component';
 
 @NgModule({
@@ -39,6 +39,7 @@ import { ShoppingEditComponent } from './shopping-lists/shopping-edit/shopping-e
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
@@ -49,11 +50,11 @@ import { ShoppingEditComponent } from './shopping-lists/shopping-edit/shopping-e
     MatNativeDateModule,
     MatGridListModule,
     MDBBootstrapModule.forRoot()
-  
+
   ],
   providers: [
     MatDatepickerModule
   ],
-  bootstrap: [AppComponent, ShoppingListsComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

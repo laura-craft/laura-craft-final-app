@@ -8,15 +8,16 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { MainPageComponent } from './main-page/main-page.component';
 
 const routes: Routes = [
-  {path: '', component: WelcomePageComponent },
-  {path: 'main-page', component: MainPageComponent, children: [
+  { path: '', component: WelcomePageComponent },
+  {
+    path: 'main-page', component: MainPageComponent, children: [
       { path: '', component: CardInfoComponent },
       { path: 'shopping-lists', component: ShoppingListsComponent },
       { path: 'to-do-list', component: ToDoListComponent },
       { path: 'calendar', component: CalendarComponent }
     ]
   },
-  
+
 ];
 
 @NgModule({

@@ -1,10 +1,13 @@
+import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-
 import { Items } from './items.model';
 
+@Injectable({
+  providedIn: 'root'
+})
 export class ShoppingListService {
   itemsChanged = new Subject<Items[]>();
-  private items: Items[] = [
+  items: Items[] = [
     new Items('Apples', 5),
     new Items('Tomatoes', 10),
   ];

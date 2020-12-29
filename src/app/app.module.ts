@@ -11,7 +11,6 @@ import { HeaderComponent } from './header/header.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { CardInfoComponent } from './card-info/card-info.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
-import { ShoppingListsComponent } from './shopping-lists/shopping-lists.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -21,7 +20,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatNativeDateModule} from '@angular/material/core';
-import { ShoppingEditComponent } from './shopping-lists/shopping-edit/shopping-edit.component';
+import { WishListsComponent } from './wish-lists/wish-lists.component';
+import { ShoppingListService } from './shopping-lists/shopping-list.service';
+import { ShoppingListModule } from './shopping-lists/shopping-list.module';
 
 @NgModule({
   declarations: [
@@ -31,9 +32,8 @@ import { ShoppingEditComponent } from './shopping-lists/shopping-edit/shopping-e
     HeaderComponent,
     CardInfoComponent,
     ToDoListComponent,
-    ShoppingListsComponent,
     CalendarComponent,
-    ShoppingEditComponent
+    WishListsComponent
   ],
   imports: [
     BrowserModule,
@@ -48,12 +48,14 @@ import { ShoppingEditComponent } from './shopping-lists/shopping-edit/shopping-e
     MatDatepickerModule,
     MatNativeDateModule,
     MatGridListModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    ShoppingListModule
   
   ],
   providers: [
-    MatDatepickerModule
+    MatDatepickerModule,
+    ShoppingListService
   ],
-  bootstrap: [AppComponent, ShoppingListsComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

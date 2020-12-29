@@ -33,7 +33,7 @@ export class CardInfoComponent implements OnInit {
       description: 'Keep your wishlists in one location',
       buttonText: 'Go to Wish Lists',
       img: 'http:../../assets/checklist-1622517_1920.png',
-      route: ''
+      route: 'wish-lists'
       },
   
   

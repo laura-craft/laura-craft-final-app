@@ -6,7 +6,8 @@ import { ShoppingListsComponent } from './shopping-lists/shopping-lists.componen
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { MainPageComponent } from './main-page/main-page.component';
-
+import { WishlistComponent } from './wishlist/wishlist.component';
+//*help from JN
 const routes: Routes = [
   { path: '', component: WelcomePageComponent },
   {
@@ -14,7 +15,8 @@ const routes: Routes = [
       { path: '', component: CardInfoComponent },
       { path: 'shopping-lists', component: ShoppingListsComponent },
       { path: 'to-do-list', component: ToDoListComponent },
-      { path: 'calendar', component: CalendarComponent }
+      { path: 'calendar', component: CalendarComponent },
+      { path: 'wishlist', component: WishlistComponent}
     ]
   },
 

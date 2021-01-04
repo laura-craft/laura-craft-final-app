@@ -4,20 +4,25 @@
 .container-fluid {
   background-image: url("../../assets/itl.cat_forest-hd-wallpaper-free_1056477.jpeg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   height: 100vh;
   width: 100vw;
   padding-left: 0px;
   padding-right: 0px;
+  position: fixed;
 }
 
 h1 {
   font-family: "Arizonia", cursive;
   color: whitesmoke;
-  font-size: 150px;
+  font-size: 125px;
+  line-height: 125px;
   margin: 0;
-  padding-top: 75px;
+  padding: 25px;
+  position: relative;
   text-align: center;
+  
+  
 }
 
 h3 {

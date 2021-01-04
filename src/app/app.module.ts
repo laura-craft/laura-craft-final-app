@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
@@ -22,6 +22,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ShoppingEditComponent } from './shopping-lists/shopping-edit/shopping-edit.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ShoppingEditComponent } from './shopping-lists/shopping-edit/shopping-e
     ToDoListComponent,
     ShoppingListsComponent,
     CalendarComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    WishlistComponent
   ],
   imports: [
     BrowserModule,

@@ -8,8 +8,8 @@ import { Items } from './items.model';
 export class ShoppingListService {
   itemsChanged = new Subject<Items[]>();
   items: Items[] = [
-    new Items('Apples', 5),
-    new Items('Tomatoes', 10),
+    new Items('', 0),
+    // new Items('', 10),
   ];
 
   getItems() {

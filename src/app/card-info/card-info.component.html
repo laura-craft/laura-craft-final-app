@@ -1,13 +1,14 @@
 <div class="container">
     <div class="row">
         <div class="col-md-5 my-5" *ngFor="let card of cards" >
-            
-<mdb-card>
-    <mdb-card-img [src]="card.img" alt="Card image cap" class="image">
+<!--Card-->            
+<mdb-card dark="true">
+    <!--Card image-->
+    <mdb-card-img [src]="card.img" alt="Card image cap" class="card-image-top">
     </mdb-card-img>
     <mdb-card-body>
         <mdb-card-title class="title">
-            <h4>{{ card.title }}</h4>
+            <h2>{{ card.title }}</h2>
         </mdb-card-title>
         <mdb-card-text>
             {{card.description}}

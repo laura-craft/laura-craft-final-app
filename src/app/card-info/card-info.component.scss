@@ -2,15 +2,19 @@
     background-color: rgb(3, 39, 53);
 }
 
-.button.mdbBtn {
-    background-color: mediumslateblue;
+.title {
+    font-style: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+.mdbBtn {
+    background-color: rgb(146, 154, 218);
 }
 
 .image {
-    height: 6em;
-    width: 6em;
+    margin-left: auto;
+    padding: 2px;
+    height: 8em;
+    width: 8em;
 }
 
-.title {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}

@@ -2,6 +2,7 @@ import {Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 
 import { Items } from '../items.model';
 import { ShoppingListService } from '../shopping-list.service';
+// import { format } from 'path';
 
 @Component({
   selector: 'app-shopping-edit',
@@ -24,4 +25,8 @@ export class ShoppingEditComponent implements OnInit {
     this.slService.addItem(newItem);
   }
 
+ 
+  onDelete(){
+    this.slService.deleteItems(this.onDelete.length);
+  }
 }

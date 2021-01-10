@@ -25,4 +25,8 @@ export class ShoppingListService {
     this.items.push(...item);
     this.itemsChanged.next(this.items.slice());
   }
+  deleteItems(index: number) {
+    this.items.splice(index, 1);
+    this.itemsChanged.next(this.items.slice());
+  }
 }

@@ -6,7 +6,7 @@
           </div>
          <ul>
             <li *ngFor = "let i of items; let ind = index">{{i}}
-                <span (click) = "removeItem(ind)">[X]</span>    
+                <span class="cursor" (click) = "removeItem(ind)">[X]</span>    
               </li>
          </ul>
         </div>

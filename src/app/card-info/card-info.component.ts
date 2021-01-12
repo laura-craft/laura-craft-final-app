@@ -29,11 +29,11 @@ export class CardInfoComponent implements OnInit {
       route: 'calendar'
       },
       {
-      title: 'Family Wish Lists',
-      description: 'Keep your wishlists in one location',
-      buttonText: 'Go to Wish Lists',
-      img: 'http:../../assets/images.jpg',
-      route: 'wishlist'
+      title: 'Planners, Storage Bins and more!',
+      description: 'Buy all your organization needs',
+      buttonText: 'Online Store',
+      img: 'http:../../assets/Best+planner+2019-2.png',
+      route: 'online-store'
       },
   
   

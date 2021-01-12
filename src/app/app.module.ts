@@ -22,7 +22,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ShoppingEditComponent } from './shopping-lists/shopping-edit/shopping-edit.component';
-import { WishlistComponent } from './wishlist/wishlist.component';
+import { OnlineStoreComponent } from './online-store/online-store.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { WishlistComponent } from './wishlist/wishlist.component';
     ShoppingListsComponent,
     CalendarComponent,
     ShoppingEditComponent,
-    WishlistComponent
+    OnlineStoreComponent
   ],
   imports: [
     BrowserModule,
